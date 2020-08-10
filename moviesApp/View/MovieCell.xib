@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="242" id="KGk-i7-Jjw" customClass="MovieCell" customModule="moviesApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="241"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="344" height="241"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="XYt-1X-PPN">
+                        <rect key="frame" x="0.0" y="0.0" width="344" height="241"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PosterDefault" translatesAutoresizingMaskIntoConstraints="NO" id="T2h-RJ-La5" userLabel="Poster">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="Upf-yM-JCt"/>
+                                    <constraint firstAttribute="width" constant="150" id="ggV-FF-OqH"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="top" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="PbQ-ol-ve1">
+                                <rect key="frame" x="150" y="0.0" width="194" height="133.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6g-zY-HU3" userLabel="title">
+                                        <rect key="frame" x="10" y="10" width="174" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Original title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHY-aW-eoc" userLabel="original title">
+                                        <rect key="frame" x="10" y="36.5" width="174" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cq0-nW-7aQ" userLabel="overview">
+                                        <rect key="frame" x="10" y="73.5" width="174" height="17"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xko-IA-YNU">
+                                        <rect key="frame" x="10" y="116.5" width="174" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3O-7E-wlL" userLabel="rating">
+                                                <rect key="frame" x="0.0" y="0.0" width="77" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCw-rD-YEr" userLabel="date">
+                                                <rect key="frame" x="97" y="0.0" width="77" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="q6g-zY-HU3" firstAttribute="top" secondItem="PbQ-ol-ve1" secondAttribute="top" constant="10" id="5yr-g9-Iz1"/>
+                                    <constraint firstItem="HHY-aW-eoc" firstAttribute="top" secondItem="q6g-zY-HU3" secondAttribute="bottom" constant="5" id="F2H-Pd-SyX"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cq0-nW-7aQ" secondAttribute="trailing" constant="10" id="IU4-x4-TkF"/>
+                                    <constraint firstItem="Cq0-nW-7aQ" firstAttribute="leading" secondItem="PbQ-ol-ve1" secondAttribute="leading" constant="10" id="IWw-mB-AT1"/>
+                                    <constraint firstItem="xko-IA-YNU" firstAttribute="leading" secondItem="PbQ-ol-ve1" secondAttribute="leading" constant="10" id="Md9-UP-fAu"/>
+                                    <constraint firstItem="HHY-aW-eoc" firstAttribute="leading" secondItem="PbQ-ol-ve1" secondAttribute="leading" constant="10" id="RXX-7I-7R0"/>
+                                    <constraint firstItem="Cq0-nW-7aQ" firstAttribute="top" secondItem="HHY-aW-eoc" secondAttribute="bottom" constant="20" id="lFX-TJ-57h"/>
+                                    <constraint firstAttribute="trailing" secondItem="HHY-aW-eoc" secondAttribute="trailing" constant="10" id="oZ4-zB-y6p"/>
+                                    <constraint firstItem="q6g-zY-HU3" firstAttribute="leading" secondItem="PbQ-ol-ve1" secondAttribute="leading" constant="10" id="pxz-Eq-st6"/>
+                                    <constraint firstAttribute="trailing" secondItem="q6g-zY-HU3" secondAttribute="trailing" constant="10" id="qLz-83-f12"/>
+                                    <constraint firstAttribute="trailing" secondItem="xko-IA-YNU" secondAttribute="trailing" constant="10" id="sR9-bS-hrj"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XYt-1X-PPN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="I7F-Cs-tpM"/>
+                    <constraint firstAttribute="trailing" secondItem="XYt-1X-PPN" secondAttribute="trailing" id="IWs-0O-hFQ"/>
+                    <constraint firstAttribute="bottom" secondItem="XYt-1X-PPN" secondAttribute="bottom" id="oaU-wg-UXH"/>
+                    <constraint firstItem="XYt-1X-PPN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ygQ-mf-uxi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="dCw-rD-YEr" id="rxG-eB-VAX"/>
+                <outlet property="originalTitleLabel" destination="HHY-aW-eoc" id="j2m-lF-76d"/>
+                <outlet property="overviewLabel" destination="Cq0-nW-7aQ" id="VSB-XV-8ZC"/>
+                <outlet property="posterImageView" destination="T2h-RJ-La5" id="vMr-mL-Ud7"/>
+                <outlet property="ratingLabel" destination="f3O-7E-wlL" id="e0s-w0-jC9"/>
+                <outlet property="titleLabel" destination="q6g-zY-HU3" id="iqG-fo-z3F"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="149.66517857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="PosterDefault" width="150" height="225"/>
+    </resources>
+</document>
